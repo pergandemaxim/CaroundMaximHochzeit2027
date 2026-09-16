@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Caroline & Maxim – Wir heiraten</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500;600&family=Mrs+Saint+Delafield&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===================== CODEWORT-SPERRE ===================== -->
+<div id="gate" class="gate">
+  <div class="gate__box">
+    <p class="gate__eyebrow">Caroline &amp; Maxim</p>
+    <h1 class="gate__title">Schön, dass ihr da seid</h1>
+    <p class="gate__text">Bitte gebt das Codewort von eurer Einladung ein, um die Seite zu öffnen.</p>
+    <form id="gateForm" class="gate__form">
+      <input type="text" id="gateInput" placeholder="Codewort" autocomplete="off" required>
+      <button type="submit">Öffnen</button>
+    </form>
+    <p id="gateError" class="gate__error">Das war leider nicht das richtige Codewort – versucht es noch einmal.</p>
+  </div>
+</div>
+
+<!-- ===================== SEITENINHALT ===================== -->
+<div id="site" class="site">
+
+  <header class="nav">
+    <a href="#home" class="nav__mark">Caroline &amp; Maxim</a>
+    <input type="checkbox" id="navToggle" class="nav__toggle">
+    <label for="navToggle" class="nav__burger" aria-label="Menü öffnen"><span></span></label>
+    <nav class="nav__links">
+      <a href="#geschichte">Geschichte</a>
+      <a href="#countdown">Countdown</a>
+      <a href="#ablauf">Ablauf</a>
+      <a href="#uebernachtung">Übernachtung</a>
+      <a href="#anreise">Anreise</a>
+      <a href="#extra" class="vip-only">Extra</a>
+      <a href="#team">Team</a>
+      <a href="#faq">Fragen</a>
+      <a href="#geschenke">Geschenke</a>
+      <a href="#rsvp" class="nav__cta">RSVP</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <!-- Monogramm: Datum in großen Ziffern hinter den Namen in Skriptschrift.
+         Ziffern und Namen unten bei Bedarf austauschen (z.B. bei anderem Datum). -->
+    <div class="monogram">
+      <div class="date-layer">
+        <span class="d1">10</span>
+        <span class="d2">09</span>
+        <span class="d3">27</span>
+      </div>
+      <div class="name-layer">
+        <span class="caroline">Caroline</span>
+        <span class="amp">&amp;</span>
+        <span class="maxim">Maxim</span>
+      </div>
+    </div>
+    <p class="hero__sub">Wir sagen Ja – und würden uns freuen, wenn ihr dabei seid.</p>
+    <a href="#rsvp" class="btn btn--primary">Zusage geben</a>
+  </section>
+
+  <!-- COUNTDOWN -->
+  <!-- Zieldatum unten in script.js bei WEDDING_DATE anpassen -->
+  <section id="countdown" class="section center">
+    <p class="section__kicker">Countdown</p>
+    <h2>Wir zählen schon</h2>
+    <p class="section__intro">Tage, Stunden, Minuten und Sekunden, bis wir Ja sagen.</p>
+    <div class="countdown__grid">
+      <div class="countdown__box">
+        <span class="countdown__num" id="cd-days">00</span>
+        <span class="countdown__label">Tage</span>
+      </div>
+      <div class="countdown__box">
+        <span class="countdown__num" id="cd-hours">00</span>
+        <span class="countdown__label">Stunden</span>
+      </div>
+      <div class="countdown__box">
+        <span class="countdown__num" id="cd-minutes">00</span>
+        <span class="countdown__label">Minuten</span>
+      </div>
+      <div class="countdown__box">
+        <span class="countdown__num" id="cd-seconds">00</span>
+        <span class="countdown__label">Sekunden</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- GESCHICHTE -->
+  <section id="geschichte" class="section split">
+    <div class="split__photo photo-placeholder"><span>Foto hier einfügen</span></div>
+    <div class="split__text">
+      <p class="section__kicker">Unsere Geschichte</p>
+      <h2>Wie alles begann</h2>
+      <p>Hier kommt eure Geschichte hin – wo ihr euch kennengelernt habt, was euren Weg zueinander ausgemacht hat und wie es zum Antrag kam. Ein bis zwei Absätze reichen meist, damit eure Gäste einen persönlichen Einblick bekommen.</p>
+      <p>Platzhaltertext – bitte später durch eure eigenen Worte ersetzen.</p>
+    </div>
+  </section>
+
+  <!-- ABLAUF -->
+  <section id="ablauf" class="section center">
+    <p class="section__kicker">Ablauf</p>
+    <h2>Unser Tag im Überblick</h2>
+    <ol class="timeline timeline--zigzag">
+       <li class="timeline__item timeline__item--left">
+          <div class="timeline__card">
+            <span class="timeline__time">14:00</span>
+            <h3>Ankunft</h3>
+            <p>Platzhalter – Ort und Details der Zeremonie.</p>
+          </div>
+          <span class="timeline__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.5-7-11a7 7 0 0114 0c0 4.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.3"/></svg>
+          </span>
+        </li>
+        <li class="timeline__item timeline__item--right">
+        <span class="timeline__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="14" r="6"/><circle cx="15" cy="14" r="6"/></svg>
+        </span>
+        <div class="timeline__card">
+          <span class="timeline__time">15:00</span>
+          <h3>Trauung</h3>
+          <p>Wir bitten Euch, während der Trauung nicht zu fotografieren oder zu filmen.</p>
+        </div>
+      </li>
+      <li class="timeline__item timeline__item--left">
+        <div class="timeline__card">
+          <span class="timeline__time">16:00</span>
+          <h3>Sektempfang</h3>
+          <p>Platzhalter – Ort und Details der Zeremonie.</p>
+        </div>
+        <span class="timeline__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h10l-1.5 7.5a3.5 4 0 01-7 0L7 3z"/><path d="M12 10.5V19M8 19h8"/></svg>
+        </span>
+      </li>
+      <li class="timeline__item timeline__item--right">
+        <span class="timeline__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h3l1.5-2h7L17 8h3a1 1 0 011 1v9a1 1 0 01-1 1H4a1 1 0 01-1-1V9a1 1 0 011-1z"/><circle cx="12" cy="13" r="3.3"/></svg>
+        </span>
+        <div class="timeline__card">
+          <span class="timeline__time">17:00</span>
+          <h3>Fotos</h3>
+          <p>Gerne machen wir mit allen Gästen ein Foto. Über ein gemeinsames Gruppenfoto würden wir uns auch sehr freuen.</p>
+        </div>
+      </li>
+      <li class="timeline__item timeline__item--left">
+        <div class="timeline__card">
+          <span class="timeline__time">18:30</span>
+          <h3>Abendessen</h3>
+          <p>Wenn du eine Hochzeitsrede halten oder ein Spiel ausrichten möchtest, wende dich bitte an unsere Trauzeugen.</p>
+        </div>
+        <span class="timeline__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M7 2v9M5 2v5a2 2 0 004 0V2M7 11v11"/><path d="M17 2c-1.5 3-1.5 6 0 8v12"/></svg>
+        </span>
+      </li>
+      <li class="timeline__item timeline__item--right">
+        <span class="timeline__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l10-2v13"/><circle cx="7" cy="18" r="2.2"/><circle cx="17" cy="16" r="2.2"/></svg>
+        </span>
+        <div class="timeline__card">
+          <span class="timeline__time">21:00</span>
+          <h3>Feier &amp; Tanz</h3>
+          <p>Platzhalter – Ort und Details der Party.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ÜBERNACHTUNG -->
+  <section id="uebernachtung" class="section alt">
+    <p class="section__kicker">Übernachtungstipps</p>
+    <h2>Wo ihr schlafen könnt</h2>
+    <p class="section__intro">Wir haben ein paar Unterkünfte in der Nähe zusammengestellt. Bitte gebt bei der Buchung den Hochzeitscode <strong>CAROLINE-MAXIM</strong> an.</p>
+    <div class="cards">
+      <div class="card">
+        <h3>Hotel Platzhalter I</h3>
+        <p>Entfernung: ca. 5 Min. · Preis: ab 00€/Nacht</p>
+        <a href="#" class="btn btn--ghost">Zur Website</a>
+      </div>
+      <div class="card">
+        <h3>Hotel Platzhalter II</h3>
+        <p>Entfernung: ca. 10 Min. · Preis: ab 00€/Nacht</p>
+        <a href="#" class="btn btn--ghost">Zur Website</a>
+      </div>
+      <div class="card">
+        <h3>Pension Platzhalter III</h3>
+        <p>Entfernung: ca. 15 Min. · Preis: ab 00€/Nacht</p>
+        <a href="#" class="btn btn--ghost">Zur Website</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ANREISE -->
+  <section id="anreise" class="section split split--reverse">
+    <div class="split__text">
+      <p class="section__kicker">Anreise</p>
+      <h2>So kommt ihr zur Location</h2>
+      <p><strong>Mit dem Auto:</strong> Platzhalter-Wegbeschreibung, Parkplätze nicht vor Ort vorhanden.</p>
+      <p><strong>Mit der Bahn:</strong> Platzhalter-Bahnhof, von dort Taxi oder Shuttle.</p>
+      <p><strong>Adresse:</strong> Friedrichstraße 2, 74918 Angelbachtal-Michelfeld</p>
+    </div>
+    <div class="split__photo photo-placeholder"><span><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.5479822178604!2d8.77766047677285!3d49.22809897461758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479797196dec24a9%3A0xa9fb1092e577540e!2sLandgut%20Schloss%20Michelfeld!5e0!3m2!1sde!2sde!4v1789058193148!5m2!1sde!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></span></div>
+  </section>
+
+  <!-- TEAM -->
+  <section id="team" class="section">
+    <p class="section__kicker">Trauzeug:innen &amp; Team</p>
+    <h2>Die Menschen an unserer Seite</h2>
+    <div class="cards cards--people">
+      <div class="card card--person">
+        <div class="card__avatar photo-placeholder"><span>Foto</span></div>
+        <h3>Name Platzhalter</h3>
+        <p>Trauzeugin</p>
+      </div>
+      <div class="card card--person">
+        <div class="card__avatar photo-placeholder"><span>Foto</span></div>
+        <h3>Name Platzhalter</h3>
+        <p>Trauzeuge</p>
+      </div>
+      <div class="card card--person">
+        <div class="card__avatar photo-placeholder"><span>Foto</span></div>
+        <h3>Name Platzhalter</h3>
+        <p>Brautjungfer</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIP-BEREICH: nur mit zweitem Codewort sichtbar (siehe script.js) -->
+  <section id="extra" class="section vip-only">
+    <p class="section__kicker">Nur für euch</p>
+    <h2>Extra-Infos für die Familie</h2>
+    <p>Platzhalter – hier könnt ihr Dinge ergänzen, die nur ein engerer Kreis sehen soll,
+       z. B. die genaue Adresse der Nachfeier, einen Rabattcode fürs Hotelkontingent
+       oder Infos zur Anprobe/zum Junggesell:innenabschied.</p>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section alt">
+    <p class="section__kicker">Fragen &amp; Antworten</p>
+    <h2>Gut zu wissen</h2>
+    <div class="faq">
+      <details class="faq__item">
+        <summary>Gibt es eine Kleiderordnung?</summary>
+        <p>Platzhalter-Antwort zur Kleiderordnung.</p>
+      </details>
+      <details class="faq__item">
+        <summary>Sind Kinder willkommen?</summary>
+        <p>Platzhalter-Antwort zur Kinderfrage.</p>
+      </details>
+      <details class="faq__item">
+        <summary>Bis wann sollen wir zusagen?</summary>
+        <p>Platzhalter-Antwort mit Datum.</p>
+      </details>
+      <details class="faq__item">
+        <summary>Gibt es einen Shuttle-Service?</summary>
+        <p>Platzhalter-Antwort zum Shuttle.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- GESCHENKE -->
+  <section id="geschenke" class="section center">
+    <p class="section__kicker">Geschenkeliste</p>
+    <h2>Eure Anwesenheit ist Geschenk genug</h2>
+    <p class="section__intro">Wer uns trotzdem eine Freude machen möchte: Hier ist unsere kleine Wunschliste.</p>
+    <a href="#" class="btn btn--primary">Zur Wunschliste</a>
+  </section>
+
+  <!-- RSVP -->
+  <section id="rsvp" class="section rsvp center">
+    <p class="section__kicker">Rückmeldung</p>
+    <h2>Sagt uns Bescheid</h2>
+    <p class="section__intro">Bitte meldet euch bis zum Platzhalter-Datum zurück.</p>
+
+    <!--
+      RSVP-FORMULAR – Formspree-Anbindung:
+      1. Kostenlosen Account auf https://formspree.io anlegen
+      2. Neues Formular erstellen, die dort angezeigte Endpoint-URL kopieren
+      3. Unten "DEINE-FORMSPREE-ID" durch die eigene ID ersetzen
+    -->
+    <form class="rsvp__form" action="https://formspree.io/f/DEINE-FORMSPREE-ID" method="POST">
+      <label>
+        Name
+        <input type="text" name="name" required>
+      </label>
+      <label>
+        E-Mail
+        <input type="email" name="email" required>
+      </label>
+      <fieldset class="rsvp__radio">
+        <legend>Kommt ihr?</legend>
+        <label><input type="radio" name="teilnahme" value="Zusage" required> Ja, wir kommen</label>
+        <label><input type="radio" name="teilnahme" value="Absage"> Wir können leider nicht</label>
+      </fieldset>
+      <label>
+        Anzahl Personen
+        <input type="number" name="personen" min="1" value="1">
+      </label>
+      <label>
+        Allergien / Anmerkungen
+        <textarea name="anmerkungen" rows="3"></textarea>
+      </label>
+      <button type="submit" class="btn btn--primary">Absenden</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>Caroline &amp; Maxim · Mit Liebe erstellt</p>
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
