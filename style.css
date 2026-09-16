@@ -145,9 +145,9 @@ body.vip-unlocked .vip-only{display:block;}
   user-select:none;
 }
 .date-layer span{position:absolute; white-space:nowrap;}
-.date-layer .d1{ top:12%; left:50%; transform:translateX(-58%); font-size:min(75vw, 350px); }
-.date-layer .d2{ top:41%; left:50%; transform:translateX(-42%); font-size:min(75vw, 350px); }
-.date-layer .d3{ top:68%; left:50%; transform:translateX(-58%); font-size:min(75vw, 350px); }
+.date-layer .d1{ top:12%; left:50%; transform:translateX(-58%); font-size:35.7vw; }
+.date-layer .d2{ top:41%; left:50%; transform:translateX(-42%); font-size:35.7vw; }
+.date-layer .d3{ top:68%; left:50%; transform:translateX(-58%); font-size:35.7vw; }
 
 .name-layer{
   position:absolute; inset:0;
@@ -157,9 +157,16 @@ body.vip-unlocked .vip-only{display:block;}
 
 }
 .name-layer span{position:absolute; white-space:nowrap;}
-.name-layer .caroline{ top:38%; left:46%; transform:translate(-50%,-50%) rotate(-9deg); font-size:min(60vw, 385px); }
-.name-layer .amp{ top:53%; left:49%; transform:translate(-50%,-50%); font-size:min(9.5vw, 90px); }
-.name-layer .maxim{ top:68%; left:55%; transform:translate(-50%,-50%) rotate(-9deg); font-size:min(60vw, 385px); }
+.name-layer .caroline{ top:38%; left:46%; transform:translate(-50%,-50%) rotate(-9deg); font-size:39.3vw; }
+.name-layer .amp{ top:53%; left:49%; transform:translate(-50%,-50%); font-size:9.5vw; }
+.name-layer .maxim{ top:68%; left:55%; transform:translate(-50%,-50%) rotate(-9deg); font-size:39.3vw; }
+
+/* Ab hier bleibt der Rahmen fix bei 940px (siehe .monogram), Schrift daher in Pixeln fixieren */
+@media (min-width: 980px){
+  .date-layer .d1, .date-layer .d2, .date-layer .d3{ font-size:350px; }
+  .name-layer .caroline, .name-layer .maxim{ font-size:385px; }
+  .name-layer .amp{ font-size:90px; }
+}
 
 .hero__sub{max-width:38ch; color:var(--ink); margin-top: 2rem;}
 
@@ -381,22 +388,17 @@ body.vip-unlocked .vip-only{display:block;}
 
 @media (max-width: 700px){
   .timeline--zigzag::before{ left:24px; }
-  .timeline__item{ grid-template-columns:48px 1fr; }
-  .timeline__icon{ grid-column:1; }
+  .timeline__item{
+    display:flex;
+    align-items:center;
+    gap:1rem;
+  }
+  .timeline__icon,
+  .timeline__item--right .timeline__icon{ order:0; }
   .timeline__item--left .timeline__card,
   .timeline__item--right .timeline__card{
-    grid-column:2; margin:0; text-align:left;
+    order:1; flex:1; margin:0; text-align:left;
   }
-}
-
-/* Monogramm auf schmalen Bildschirmen einbremsen, damit nichts überläuft */
-@media (max-width: 600px){
-  .date-layer .d1,
-  .date-layer .d2,
-  .date-layer .d3{ font-size:min(34vw, 145px); }
-  .name-layer .caroline,
-  .name-layer .maxim{ font-size:min(19vw, 85px); }
-  .name-layer .amp{ font-size:min(20vw, 90px); }
 }
 
 @media (max-width: 480px){
