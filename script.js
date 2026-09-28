@@ -2,8 +2,8 @@
 // Normales Codewort: schaltet die Seite frei.
 // VIP-Codewort: schaltet zusätzlich die Extra-Bereiche frei (Klasse "vip-only").
 // Groß-/Kleinschreibung ist bei der Eingabe egal.
-const CODEWORD = "HOCHZEIT2027";
-const VIP_CODEWORD = "FAMILIE2027";
+const CODEWORD = "CaroistdieBeste!";
+const VIP_CODEWORD = "CaroistdieAllerbeste!";
 // =======================================================================
 
 const gate = document.getElementById("gate");
