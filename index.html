@@ -7,7 +7,7 @@
 <meta name="robots" content="noindex, nofollow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500;600&family=Mrs+Saint+Delafield&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Prata&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -47,24 +47,28 @@
     </nav>
   </header>
 
-  <!-- HERO -->
+  <!-- HERO – nach dem neuen Einladungsdesign (Foto + Karte, Orange/Weiß, Prata & Century Gothic) -->
   <section id="home" class="hero">
-    <!-- Monogramm: Datum in großen Ziffern hinter den Namen in Skriptschrift.
-         Ziffern und Namen unten bei Bedarf austauschen (z.B. bei anderem Datum). -->
-    <div class="monogram">
-      <div class="date-layer">
-        <span class="d1">10</span>
-        <span class="d2">09</span>
-        <span class="d3">27</span>
-      </div>
-      <div class="name-layer">
-        <span class="caroline">Caroline</span>
-        <span class="amp">&amp;</span>
-        <span class="maxim">Maxim</span>
-      </div>
+    <div class="hero__photo">
+      <img src="couple.jpg" alt="Caroline und Maxim" loading="eager">
+      <p class="hero__photo-label">Wir sagen Ja
+        <svg class="hero__heart-mini" viewBox="0 0 32 29" aria-hidden="true"><path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.1C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.6,0,8.4c0,7.9,10.5,13.5,16,20.6c5.5-7,16-12.8,16-20.6C32,3.6,28.2,0,23.6,0z"/></svg>
+      </p>
+      <p class="hero__photo-date"><span>10</span><span>09</span><span>27</span></p>
     </div>
-    <p class="hero__sub">Wir sagen Ja – und würden uns freuen, wenn ihr dabei seid.</p>
-    <a href="#rsvp" class="btn btn--primary">Zusage geben</a>
+
+    <div class="hero__content">
+      <span class="hero__tag" aria-hidden="true">
+        <svg viewBox="0 0 32 29"><path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.1C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.6,0,8.4c0,7.9,10.5,13.5,16,20.6c5.5-7,16-12.8,16-20.6C32,3.6,28.2,0,23.6,0z"/></svg>
+        <span>C&nbsp;M</span>
+      </span>
+      <p class="hero__eyebrow">soon to be</p>
+      <h1 class="hero__title">Mr. &amp; Mrs.</h1>
+      <p class="hero__text">Wir möchten diesen besonderen Tag mit euch feiern und gemeinsam unvergessliche Erinnerungen schaffen.</p>
+      <p class="hero__text">Unsere freie Trauung findet am 10.09.2027 um 15:00 Uhr auf dem Landgut Schloss Michelfeld statt. Anschließend möchten wir dort gemeinsam mit euch feiern.</p>
+      <p class="hero__names">Caroline &amp; Maxim</p>
+      <a href="#rsvp" class="btn btn--primary">Zusage geben</a>
+    </div>
   </section>
 
   <!-- COUNTDOWN -->
