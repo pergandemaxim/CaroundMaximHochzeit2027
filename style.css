@@ -457,6 +457,29 @@ body.vip-unlocked .vip-only{display:block;}
   color:var(--ink);
   border-top:1px solid var(--line);
 }
+.footer p{margin-left:auto; margin-right:auto;}
+.footer a{color:var(--ink);}
+.footer a:hover{color:var(--accent);}
+
+.gate__legal{margin-top:1.6rem; font-size:0.8rem;}
+.gate__legal{color:rgba(255,255,255,.6);}
+.gate__legal a{color:rgba(255,255,255,.6);}
+.gate__legal a:hover{color:#fff;}
+
+/* ===================== DATENSCHUTZ-SEITE ===================== */
+.legal{max-width:760px;}
+.legal h1{font-size:clamp(2rem,5vw,2.8rem); color:var(--accent); margin-bottom:0.6em;}
+.legal h2{font-size:1.25rem; margin-top:2.2em;}
+.legal p, .legal li{font-size:0.98rem; max-width:none;}
+.legal ul{padding-left:1.2em; margin:0 0 1em;}
+.legal li{margin-bottom:0.4em;}
+.legal mark{background:var(--accent-soft); color:var(--ink); padding:0 0.25em;}
+.legal__stand{margin-top:2.5em; opacity:.6; font-size:0.85rem;}
+.legal__back{
+  color:var(--ink); text-decoration:none; font-size:0.9rem;
+  text-transform:uppercase; letter-spacing:0.03em;
+}
+.legal__back:hover{color:var(--accent);}
 
 /* ===================== RESPONSIVE ===================== */
 @media (max-width: 900px){
