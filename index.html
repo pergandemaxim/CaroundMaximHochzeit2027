@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="de">
 <head>
 <meta charset="UTF-8">
@@ -183,7 +183,7 @@
       <img src="lageplan.jpg" alt="Lageplan mit Parkmöglichkeiten und Fußweg zum Landgut Schloss Michelfeld">
       <figcaption>Parkplätze &amp; Fußweg zur Location (ca. 5 Min.)</figcaption>
     </figure>
-	  <p></p>
+    <p></p>
    <p> P1: 10 Plätze <br> Friedrichstraße 11a, 74918 Angelbachtal</p> 
    <p> P2: Festplatz Angelbachtal <br> Schulstraße, 74918 Angelbachtal</p>
   </section>
@@ -269,12 +269,17 @@
     <p class="section__intro">Bitte meldet euch bis zum 10.06.2027</p>
 
     <!--
-      RSVP-FORMULAR – Formspree-Anbindung:
-      1. Kostenlosen Account auf https://formspree.io anlegen
-      2. Neues Formular erstellen, die dort angezeigte Endpoint-URL kopieren
-      3. Unten "DEINE-FORMSPREE-ID" durch die eigene ID ersetzen
+      RSVP-FORMULAR – Formspree-Anbindung (Endpoint: xnppvyer)
+      Spamschutz: Das versteckte Feld "_gotcha" (Honeypot) ist für Menschen unsichtbar.
+      Spam-Bots füllen es aus, Formspree verwirft solche Einsendungen automatisch.
     -->
-    <form class="rsvp__form" action="https://formspree.io/f/DEINE-FORMSPREE-ID" method="POST">
+    <form class="rsvp__form" action="https://formspree.io/f/xnppvyer" method="POST">
+      <input type="hidden" name="_subject" value="Neue Rückmeldung zur Hochzeit">
+      <div aria-hidden="true" style="position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden;">
+        <label>Dieses Feld bitte leer lassen
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+        </label>
+      </div>
       <label>
         Name
         <input type="text" name="name" required>
